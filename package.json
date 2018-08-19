@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "scss.media-commons": "file:../scss.media-commons"
   }
 }
