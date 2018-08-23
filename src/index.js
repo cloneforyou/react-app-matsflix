@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { typograpgy } from 'scss-library-media-commons';
 
 import './index.scss';
+import registerServiceWorker from './registerServiceWorker';
 import App from './components/app/App';
 
 ReactDOM.render((
@@ -11,3 +12,4 @@ ReactDOM.render((
     <App />
   </BrowserRouter>
 ), document.getElementById('index'));
+registerServiceWorker();
