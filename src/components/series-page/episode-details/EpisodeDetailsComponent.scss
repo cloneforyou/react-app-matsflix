@@ -1,0 +1,59 @@
+.episode-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.episode-details__queue-button {
+  cursor: pointer;
+  display: block;
+  height: 100px;
+  width: 120px;
+  position: relative;
+}
+
+.episode-details__queue-button__plus {
+  font-size: 30px;
+  left: 50%;
+  position: absolute;
+  margin-top: -3px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.episode-details__queue-button__tv {
+  font-size: 85px;
+  left: 50%;
+  margin-left: 3px;
+  margin-top: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+  .episode-details__side-bar {
+    flex-basis: 100%;
+  }
+}
+
+.episode-details__side-bar {
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .episode-details__side-bar {
+    flex-basis: 100%;
+  }
+}
+
+.episode-details__video-player {
+  flex-basis: 69%;
+  flex-grow: 1;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}

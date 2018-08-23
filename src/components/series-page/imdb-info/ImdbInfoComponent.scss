@@ -1,0 +1,39 @@
+.imdb-info {
+  display: flex;
+}
+
+.imdb-info__content {
+  flex-grow: 1;
+}
+
+.imdb-info__title {
+  margin: 0;
+}
+
+.imdb-info__stats {
+  display: flex;
+  font-size: 14px;
+}
+
+.imdb-info__stats__generic {
+  flex-grow: 1;
+}
+
+.imdb-info__plot {
+  margin: 10px 0 0 0;
+}
+
+.imdb-info__image {
+  margin: 0 0 0 100px;
+}
+
+@Media(max-width: 1024px) {
+  .imdb-info {
+    flex-direction: column;
+  }
+
+  .imdb-info__image {
+    align-self: center;
+    margin: 30px 0 0 0;
+  }
+}

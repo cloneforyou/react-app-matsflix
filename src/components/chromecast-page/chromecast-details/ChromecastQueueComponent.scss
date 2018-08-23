@@ -1,0 +1,21 @@
+.chromecast-queue {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+}
+
+.chromecast-queue__item {
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.chromecast-queue__title {
+}

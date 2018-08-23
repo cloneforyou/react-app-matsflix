@@ -1,0 +1,14 @@
+.matsflix {
+  display: flex;
+  flex-direction: column;
+}
+
+.matsflix__search {
+  width: 600px;
+}
+
+@media (max-width: 1024px) {
+    .matsflix__search {
+      width: 100%;
+    }
+}

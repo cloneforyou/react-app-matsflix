@@ -1,0 +1,18 @@
+.backup {
+  position: relative;
+  text-align: center;
+}
+
+.backup__img {
+  opacity: 0.3;
+}
+
+.backup__title {
+  color: white;
+  bottom: 0;
+  font-size: 1rem;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  transform: translateX(-50%);
+}

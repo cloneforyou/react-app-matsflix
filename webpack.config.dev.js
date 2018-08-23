@@ -6,6 +6,11 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+  output: {
+    path: __dirname + '/dist',
+    filename: 'bundle.js',
+    publicPath: '/'
+  },
   module: {
     rules: [
       {
@@ -41,6 +46,11 @@ module.exports = {
     ]
   },
   plugins: [htmlPlugin],
+  devtool: 'source-map',
+  devServer: {
+    port: 3000,
+    historyApiFallback: true
+  },
   node: {
     console: true,
     fs: 'empty',

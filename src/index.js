@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from 'react-router-dom';
+import { typograpgy } from 'scss-library-media-commons';
+
 import './index.scss';
-import { typograpgy } from 'scss.media-commons'
+import App from './components/app/App';
 
-const Index = () => {
-  return <div>Hello React!</div>;
-};
-
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('index'));

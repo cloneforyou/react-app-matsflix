@@ -1,0 +1,103 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+
+@keyframes rotate90 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateMinus90 {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.chromecast-info {
+  position: relative;
+  cursor: pointer;
+}
+
+.chromecast-info__icon {
+  font-size: 41px;
+  height: 42px;
+  opacity: 1;
+  position: relative;
+  user-select: none;
+  width: 42px;
+}
+
+.chromecast-info__icon i {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chromecast-info__icon--loading {
+  animation: rotate 2s infinite 1s, pulse 2s infinite 1s
+}
+
+.chromecast-info__icon--connected {
+  animation: pulse 2s 1, rotate180 2s;
+}
+
+.chromecast-info__icon--open {
+  animation-name: rotate90;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.chromecast-info__dropdown {
+  margin-top: 10px;
+  position: absolute;
+  right: 50%;
+  width: 300px;
+  z-index: 1;
+}
+
+.chromecast-info__chromecast-select {
+  width: 100%;
+}
+
+.chromecast-info__queue-button {
+  width: 100%;
+}

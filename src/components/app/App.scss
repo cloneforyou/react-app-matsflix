@@ -1,0 +1,39 @@
+.app {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.app__header {
+  display: flex;
+  flex-basis: 100px;
+  font-family: monospace;
+  height:100px;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  margin: 0 2%;
+  min-height: 100px;
+}
+
+.app__header__title {
+  font-size: 60px;
+  margin: 2% 0 20px 0;
+}
+
+.app__header__title a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.app__header__chromecast-info {
+  align-self: center;
+  margin: 2% 0 20px 0;
+}
+
+.app__media-component {
+  flex-basis:0;
+  flex-grow: 1;
+  margin: 0 5%;
+  position: relative;
+}
+
