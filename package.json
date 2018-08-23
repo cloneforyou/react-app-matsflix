@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "start": "webpack-dev-server --mode development --open --config webpack.config.dev.js",
-    "start-production": "webpack-dev-server --mode production--config webpack.config.js",
+    "start-production": "serve -n -l 8080 dist --config webpack.config.js",
     "build": "npm run clean && webpack --mode development --config webpack.config.dev.js",
     "build-production": "npm run clean && webpack --mode production --config webpack.config.js"
   },
@@ -45,6 +45,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "scss-library-media-commons": "git+https://github.com/majoer/scss-library-media-commons.git",
+    "serve": "^10.0.0",
     "slick-carousel": "^1.8.1"
   }
 }
